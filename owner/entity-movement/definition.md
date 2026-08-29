@@ -32,6 +32,16 @@ La interpretación posterior de ese hecho pertenece a otras capacidades del sist
 
 Esta separación permite que el movimiento conserve una representación independiente de las interpretaciones que puedan realizarse posteriormente sobre la información registrada.
 
+## Registro auxiliar de entidades y artículos
+
+El módulo puede permitir el registro de entidades y artículos durante el flujo de trabajo de un movimiento.
+
+Esta capacidad existe para evitar que la organización deba abandonar el contexto actual cuando la entidad o el artículo que necesita todavía no se encuentra registrado.
+
+El registro realizado desde movimiento de entidad no implica que las entidades o artículos pertenezcan conceptualmente al módulo. Estos mantienen su carácter transversal dentro de Senttinela y pueden ser gestionados también desde capacidades independientes.
+
+Movimiento de entidad utiliza estos registros como información necesaria para representar el hecho económico, procurando que su creación interfiera lo menos posible con el flujo del usuario.
+
 ## Evolución
 
 La información registrada por los movimientos podrá servir posteriormente como base para otras capacidades de Senttinela.
