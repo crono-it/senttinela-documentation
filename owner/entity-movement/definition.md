@@ -55,3 +55,59 @@ Estas capacidades no forman parte de la definición actual del módulo.
 El movimiento de entidad busca que la organización pueda registrar lo que ocurrió sin tener que determinar previamente una interpretación posterior sobre ese hecho.
 
 Senttinela debe partir del hecho registrado y permitir que su significado pueda construirse posteriormente a partir de la información disponible.
+
+### Registro de entidades
+
+Movimiento de entidad permite registrar una nueva entidad sin abandonar el flujo actual cuando la contraparte necesaria para registrar el movimiento todavía no existe.
+
+Las entidades registradas desde este flujo mantienen su carácter transversal dentro de Senttinela y no pertenecen exclusivamente a la organización ni al módulo de movimiento de entidad.
+
+El registro debe solicitar únicamente la información necesaria para identificar la entidad y permitir su utilización posterior en movimientos.
+
+La identificación de una entidad se realiza considerando su país y su identificación fiscal, mientras que el nombre normalizado se utiliza principalmente para facilitar su búsqueda.
+
+### Identificación de entidades según el país
+
+La identificación de una entidad depende del país al que pertenece.
+
+El registro de país contiene la denominación del identificador que debe utilizarse en la interfaz. Por ejemplo, Chile utiliza `RUT`.
+
+El formulario de registro de entidad utiliza esta información para mostrar dinámicamente el nombre del campo de identificación.
+
+La obligatoriedad del identificador también depende de la configuración del país. Cuando el país define un identificador, el campo es obligatorio.
+
+El documento de entidad utiliza `identifier` como propiedad general y `searchIdentifier` como representación normalizada destinada a facilitar búsquedas y detección de registros duplicados.
+
+La unicidad del identificador se evalúa dentro del contexto del país, por lo que el mismo valor de identificación puede existir en países diferentes sin representar necesariamente a la misma entidad.
+
+
+### Artículos dentro de un movimiento
+
+Un movimiento puede contener uno o más artículos.
+
+Cada artículo incluido en el movimiento representa una parte del hecho económico registrado y contiene la información necesaria para determinar su participación en dicho movimiento.
+
+La cantidad representa cuánto del artículo participa en el movimiento.
+
+El precio representa el valor unitario utilizado para ese artículo dentro del movimiento.
+
+El valor total de un artículo se obtiene multiplicando su cantidad por su precio unitario.
+
+El valor total del movimiento corresponde a la suma de los valores de todos sus artículos.
+
+Un artículo puede corresponder a un producto o a un servicio. La unidad de medida se determina a partir de la información registrada para el artículo y no forma parte de la definición del movimiento como una configuración independiente.
+
+### Registro de movimientos
+
+El registro de un movimiento se realiza mediante una instancia temporal de formulario.
+
+El formulario permite seleccionar un artículo, indicar su cantidad y establecer su precio. Cada artículo agregado pasa a formar parte de la colección de artículos del movimiento.
+
+El movimiento solo puede registrarse cuando contiene al menos un artículo.
+
+La cantidad debe ser mayor que cero.
+
+El precio no puede ser negativo.
+
+La información del movimiento representa el estado registrado en el momento del evento. La interpretación contable del movimiento corresponde a otras capacidades del sistema y no forma parte de esta responsabilidad.
+
