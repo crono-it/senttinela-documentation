@@ -1,17 +1,25 @@
-# Organizaciones
+# Organización
 
-## Relación con entidades
+## Definición
 
-Una organización y una entidad representan conceptos independientes.
+Una organización representa el espacio o contexto dentro del cual se administran los movimientos de Senttinela.
 
-La creación de una organización no debe crear automáticamente una entidad.
+Es el contexto principal de trabajo para los usuarios que pertenecen a una organización.
 
-Una organización puede tener una entidad relacionada cuando el contexto lo requiera, pero esta relación debe definirse explícitamente.
+Una organización no representa necesariamente una empresa.
 
-Esto permite representar organizaciones que no corresponden a empresas, como hogares, personas o proyectos.
+## Ejemplos
 
-## Creación
+Una organización puede representar:
 
-El registro inicial de una organización debe encargarse de crear la organización y sus datos propios.
+- Una empresa.
+- Un emprendimiento.
+- Un negocio.
+- Un hogar.
+- Una familia.
+- Otro contexto donde una persona quiera registrar y administrar sus movimientos.
 
-La creación o asociación de una entidad relacionada debe tratarse como una operación independiente.
+Por ejemplo:
+
+```text
+Mi hogar
