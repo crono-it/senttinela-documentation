@@ -2,24 +2,22 @@
 
 ## Definición
 
-Una organización representa el espacio o contexto dentro del cual se administran los movimientos de Senttinela.
+Una organización representa el espacio de trabajo dentro del cual se administra la actividad de Senttinela.
 
-Es el contexto principal de trabajo para los usuarios que pertenecen a una organización.
+No representa necesariamente una empresa. Puede corresponder, por ejemplo, a una empresa, una persona, un emprendimiento, un hogar o un grupo.
 
-Una organización no representa necesariamente una empresa.
+## Tipo de organización
 
-## Ejemplos
+La organización utiliza los tipos de sujeto configurados para su país. En la interfaz estos se presentan como tipos de organizaciones para mantener el lenguaje contextual al usuario.
 
-Una organización puede representar:
+## Identificación
 
-- Una empresa.
-- Un emprendimiento.
-- Un negocio.
-- Un hogar.
-- Una familia.
-- Otro contexto donde una persona quiera registrar y administrar sus movimientos.
+Cuando el tipo seleccionado admite identificador, Senttinela puede solicitarlo de acuerdo con la configuración del país y aplicar las reglas técnicas que conozca para ese identificador.
 
-Por ejemplo:
+## Actividad
 
-```text
-Mi hogar
+Una organización puede registrar una actividad que describa a qué se dedica. Este dato es opcional y puede servir en el futuro como contexto para comprender y clasificar mejor su información.
+
+## Organización y entidad
+
+Organization y Entity son conceptos independientes. Crear una organización no crea automáticamente una entidad.

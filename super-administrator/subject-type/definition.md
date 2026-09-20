@@ -1,17 +1,21 @@
-# Organizaciones
+# Tipo de sujeto
 
-## Relación con entidades
+## Definición
 
-Una organización y una entidad representan conceptos independientes.
+Un tipo de sujeto representa una categoría general utilizada por Senttinela para describir qué clase de sujeto puede participar en distintos contextos.
 
-La creación de una organización no debe crear automáticamente una entidad.
+Actualmente se utilizan:
 
-Una organización puede tener una entidad relacionada cuando el contexto lo requiera, pero esta relación debe definirse explícitamente.
+- Persona.
+- Empresa.
+- Grupo.
 
-Esto permite representar organizaciones que no corresponden a empresas, como hogares, personas o proyectos.
+## Identificación
 
-## Creación
+Un tipo de sujeto puede indicar si conceptualmente admite un identificador mediante `hasIdentifier`.
 
-El registro inicial de una organización debe encargarse de crear la organización y sus datos propios.
+Esta propiedad no define el nombre, formato ni algoritmo de un identificador concreto. Esas reglas pueden depender del país y de la implementación utilizada por Senttinela.
 
-La creación o asociación de una entidad relacionada debe tratarse como una operación independiente.
+## Alcance
+
+Los tipos de sujeto son transversales. Pueden ser utilizados tanto por organizaciones como por entidades sin crear tipos independientes para cada contexto.
