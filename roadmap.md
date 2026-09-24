@@ -1,62 +1,66 @@
 # Roadmap Agile de Senttinela
 
-El roadmap expresa objetivos que queremos explorar y no compromisos rígidos de funcionalidades o fechas.
+## Propósito
 
-Su orden puede cambiar según el aprendizaje obtenido mediante el uso real de Senttinela.
+El roadmap de Senttinela expresa los objetivos que queremos explorar a partir de la experiencia obtenida mediante su uso real.
 
-## Principio
+No representa un compromiso rígido de funcionalidades, versiones o fechas.
 
-Senttinela evoluciona a partir de la experiencia obtenida mediante su uso real.
+Los objetivos pueden cambiar, reordenarse o descartarse cuando lo aprendido durante el uso de Senttinela indique que existe una necesidad diferente o una mejor forma de resolverla.
 
-El roadmap expresa problemas y objetivos que queremos explorar, no un compromiso rígido de funcionalidades o fechas.
-
-Las necesidades observadas durante el uso de Senttinela pueden modificar, reemplazar o descartar objetivos del roadmap.
-
-Cuando sea posible, los aprendizajes obtenidos serán compartidos para que puedan generar valor más allá del propio producto.
+---
 
 ## Ahora — Validar el núcleo
 
 ### Objetivo
 
-Comprobar que una persona puede utilizar Senttinela para registrar y comprender los movimientos económicos básicos de su organización.
+Comprobar que Senttinela permite registrar y comprender de forma simple los movimientos económicos básicos de una organización.
 
 ### Queremos aprender
 
-- Si se entiende qué es una entidad.
-- Si se entiende qué es un artículo.
-- Si registrar un ingreso resulta natural.
-- Si registrar un egreso resulta natural.
-- Si pendiente y pagado representan situaciones reales.
-- Si el registro de pagos resulta comprensible.
-- Si la información mostrada en Inicio resulta útil.
-
-### Posibles mejoras
-
-Las mejoras surgirán de los problemas observados durante el uso.
-
----
+- Si registrar una entidad resulta comprensible.
+- Si registrar un artículo resulta comprensible.
+- Si registrar ingresos y egresos resulta natural.
+- Si los estados pendiente y pagado representan adecuadamente situaciones reales.
+- Si el registro y seguimiento de pagos resulta comprensible.
+- Si consultar los movimientos de una entidad entrega información útil.
+- Si la información presentada en Inicio ayuda a comprender el movimiento efectivo del dinero.
 
 ### Aprendizajes
 
 El uso inicial de Senttinela mostró la necesidad de poder corregir información registrada.
 
-Actualmente se explorará la administración de entidades, artículos, movimientos y pagos, manteniendo la separación entre información transversal y aquella perteneciente a cada organización.
+Esto abre la exploración de mecanismos para administrar entidades, artículos, movimientos y pagos sin comprometer información perteneciente a otras organizaciones.
+
+Las entidades y artículos continúan siendo información transversal, por lo que su administración debe distinguir entre quién puede utilizarlos y quién puede modificarlos.
+
+### En exploración
+
+- Administración de entidades registradas por una organización.
+- Administración de artículos registrados por una organización.
+- Corrección de movimientos.
+- Corrección y eliminación de pagos mientras corresponda.
+- Mejoras de experiencia detectadas durante el uso real.
+
+---
 
 ## Próximo — Comprender mejor la organización
 
 ### Objetivo
 
-Ayudar al usuario a obtener información útil a partir de los movimientos que ya registra.
+Transformar los movimientos registrados en información que ayude a una organización a comprender mejor su actividad.
 
-### Posibilidades a explorar
+### Queremos explorar
 
-- saldos pendientes;
-- evolución del flujo de dinero;
-- comparación entre períodos;
-- información por entidad;
-- información por artículo.
+- Saldos pendientes.
+- Información histórica de ingresos y egresos.
+- Comparación entre períodos.
+- Información relacionada con entidades.
+- Información relacionada con artículos.
 
-La implementación dependerá de lo aprendido durante la validación del núcleo.
+Estas posibilidades no representan funcionalidades comprometidas.
+
+Su implementación dependerá de la utilidad observada y de las necesidades que aparezcan durante la validación del núcleo.
 
 ---
 
@@ -64,25 +68,49 @@ La implementación dependerá de lo aprendido durante la validación del núcleo
 
 ### Objetivo
 
-Evaluar si los movimientos registrados pueden ayudar a comprender las existencias de productos.
+Explorar si la información que ya registra Senttinela puede ayudar a una organización a comprender las entradas, salidas y existencias de sus productos.
 
-### Posibilidades a explorar
+### Queremos explorar
 
-- movimientos `item/income`;
-- movimientos `item/outcome`;
-- existencias derivadas;
-- conversiones entre unidades compatibles.
+- Movimientos de entrada de artículos.
+- Movimientos de salida de artículos.
+- Existencias derivadas de los movimientos.
+- Conversión entre unidades de una misma magnitud.
+- Relación entre movimientos económicos y movimientos de artículos.
+
+La gestión de inventario no forma parte actualmente del núcleo validado de Senttinela.
 
 ---
 
 ## Futuro
 
-Existen áreas que pueden explorarse si aparecen necesidades reales:
+Existen áreas que pueden ser exploradas cuando aparezca una necesidad que las justifique.
 
-- producción;
+Entre ellas:
+
+- producción y transformación de artículos;
 - conceptos y reglas contables;
-- automatización;
+- automatización de clasificaciones;
 - importación de información;
-- integración con otros sistemas.
+- integración con otros sistemas;
+- nuevas formas de análisis de la información.
 
-Su inclusión no está comprometida.
+Su presencia en esta sección no implica un compromiso de implementación.
+
+---
+
+## Criterio de evolución
+
+Una funcionalidad no se incorpora a Senttinela únicamente porque sea habitual en otros sistemas de gestión.
+
+Antes de incorporarla buscamos comprender:
+
+1. qué problema intenta resolver;
+2. quién experimenta ese problema;
+3. cómo se resuelve actualmente;
+4. qué hemos aprendido mediante el uso de Senttinela;
+5. cuál es la solución más pequeña que nos permita aprender o aportar valor.
+
+Cuando una solución implementada no produzca el resultado esperado, podrá ser modificada o descartada.
+
+Senttinela evoluciona mediante ciclos pequeños de construcción, uso, aprendizaje y adaptación.
