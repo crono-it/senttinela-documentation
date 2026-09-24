@@ -1,45 +1,56 @@
-# Movimiento
+# Movimientos
 
 ## Definición
 
-Un movimiento representa un hecho ocurrido dentro de una organización. Permite registrar entradas y salidas relacionadas con dinero o artículos sin exigir al usuario conocimientos contables.
+Un movimiento representa un hecho que produce una entrada o salida para una organización.
 
-## Tipo y evento
+Los movimientos permiten registrar de forma simple las operaciones de una organización sin exigir conocimientos contables a sus usuarios.
 
-Un movimiento utiliza dos dimensiones principales.
+## Movimientos con entidades
 
-El tipo indica qué se mueve:
+Un movimiento con una entidad representa una operación económica entre la organización y una entidad.
 
-- `entity`: relación económica con una entidad.
-- `item`: entrada o salida de un artículo.
+Puede ser:
 
-El evento indica la dirección:
+- **Ingreso:** dinero que la organización recibe de una entidad.
+- **Egreso:** dinero que la organización entrega a una entidad.
 
-- `income`: entrada.
-- `outcome`: salida.
-
-Una venta puede generar un ingreso asociado a una entidad y una salida de artículos. Una compra puede generar un egreso asociado a una entidad y una entrada de artículos.
-
-## Entidades
-
-Una entidad representa una persona, empresa o grupo con el que una organización registra movimientos.
-
-Las entidades son transversales y no pertenecen exclusivamente a una organización. Su tipo depende de los tipos de sujeto configurados para el país.
-
-Cuando corresponde, una entidad puede utilizar un identificador. Senttinela aplica las reglas conocidas para ese identificador sin exigir al usuario conocer su implementación técnica.
+Un movimiento puede contener uno o más artículos que describen aquello que originó la operación.
 
 ## Artículos
 
-Un artículo representa algo que puede participar en un movimiento.
+Los artículos permiten describir los productos, servicios o conceptos involucrados en un movimiento.
 
-Actualmente se distinguen tipos como producto y servicio. Un producto utiliza una unidad de medida; un servicio no requiere una unidad física.
+Los artículos pueden ser transversales y reutilizados por distintas organizaciones.
 
-Los artículos forman un catálogo transversal para reducir registros repetidos y facilitar su reutilización entre organizaciones.
+Cuando un artículo requiere una unidad de medida, este define la magnitud que puede utilizar. La unidad concreta se selecciona al registrar el movimiento.
 
-## Estado y pagos
+Por ejemplo:
 
-Los movimientos de entidad pueden registrar su estado de pago y los pagos efectivamente realizados. Los pagos permiten representar el flujo efectivo de ingresos y egresos de la organización.
+- Harina → masa.
+- Masa → gramos o kilogramos.
 
-## Evolución
+De esta manera, un mismo artículo puede registrarse utilizando diferentes unidades sin duplicar su definición.
 
-Movement concentra actualmente el registro de movimientos, entidades y artículos. Estos conceptos pueden evolucionar hacia contextos independientes cuando exista una necesidad real del producto.
+## Pagos
+
+Un movimiento puede registrarse como pendiente o pagado.
+
+Los movimientos pendientes pueden recibir uno o más pagos posteriormente.
+
+Cada pago registra:
+
+- el monto pagado;
+- la fecha en que ocurrió el pago;
+- la fecha en que fue registrado en Senttinela;
+- opcionalmente, un comentario.
+
+La suma de los pagos determina si el movimiento continúa pendiente o se considera pagado.
+
+Un pago puede superar el saldo pendiente del movimiento.
+
+## Flujo de dinero
+
+Los pagos representan el movimiento efectivo del dinero.
+
+La fecha del pago permite que Senttinela represente el período en que ocurrió realmente el ingreso o egreso, independientemente de cuándo haya sido registrado en la aplicación.
