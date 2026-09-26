@@ -33,3 +33,11 @@ El MVP no pretende todavía resolver:
 - automatización contable.
 
 Estas capacidades podrán evaluarse a partir del uso real y de las necesidades observadas.
+
+## Privacidad del MVP
+
+Las entidades, artículos y movimientos pertenecen a la organización que los registra y no se comparten con otras organizaciones.
+
+La entidad asociada a un movimiento es opcional. Senttinela busca evitar solicitar o duplicar datos personales cuando no son necesarios para representar la operación.
+
+Estas decisiones consideran la evolución de la normativa chilena de protección de datos, incluida la Ley N.º 21.719.

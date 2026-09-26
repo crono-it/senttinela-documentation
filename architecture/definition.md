@@ -47,3 +47,11 @@ La arquitectura de Senttinela debe favorecer cambios pequeños y progresivos.
 Las decisiones arquitectónicas deben buscar que un cambio realizado en un módulo tenga el menor impacto posible sobre otros módulos.
 
 La arquitectura debe evolucionar junto con las necesidades reales de la aplicación, evitando introducir abstracciones o estructuras que todavía no sean necesarias.
+
+## 5. Privacidad y separación de organizaciones
+
+La información operacional de una organización debe permanecer separada de las demás organizaciones.
+
+Entidades, artículos y movimientos pertenecen a la organización que los registra. El acceso se limita al contexto de dicha organización y no se habilita automáticamente al rol Super Administrador.
+
+Esta separación busca reducir exposición innecesaria de información y acompaña la evolución de Senttinela hacia la protección de datos desde el diseño, considerando la Ley N.º 19.628 modificada por la Ley N.º 21.719.
