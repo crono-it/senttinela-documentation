@@ -55,3 +55,11 @@ La información operacional de una organización debe permanecer separada de las
 Entidades, artículos y movimientos pertenecen a la organización que los registra. El acceso se limita al contexto de dicha organización y no se habilita automáticamente al rol Super Administrador.
 
 Esta separación busca reducir exposición innecesaria de información y acompaña la evolución de Senttinela hacia la protección de datos desde el diseño, considerando la Ley N.º 19.628 modificada por la Ley N.º 21.719.
+
+## Acceso de usuarios
+
+Los usuarios de Senttinela acceden mediante cuentas asociadas a una organización y un rol.
+
+Cuando una nueva cuenta es habilitada, el usuario recibe un correo que le permite establecer su contraseña y comenzar a utilizar Senttinela.
+
+Las contraseñas son gestionadas mediante el sistema de autenticación y no son almacenadas por Senttinela como información de la organización.
