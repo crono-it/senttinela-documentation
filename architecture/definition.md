@@ -58,8 +58,29 @@ Esta separación busca reducir exposición innecesaria de información y acompa�
 
 ## Acceso de usuarios
 
-Los usuarios de Senttinela acceden mediante cuentas asociadas a una organización y un rol.
+Los usuarios de Senttinela acceden mediante cuentas asociadas
+a una organización y un rol.
 
-Cuando una nueva cuenta es habilitada, el usuario recibe un correo que le permite establecer su contraseña y comenzar a utilizar Senttinela.
+Para habilitar una cuenta se utiliza la información necesaria
+para identificar al usuario dentro de Senttinela y gestionar
+su acceso.
 
-Las contraseñas son gestionadas mediante el sistema de autenticación y no son almacenadas por Senttinela como información de la organización.
+Actualmente se utiliza:
+
+- un nombre de uso;
+- un correo electrónico;
+- la organización asociada;
+- el rol correspondiente.
+
+El nombre de uso permite identificar al usuario dentro de
+Senttinela y no requiere corresponder a su nombre legal completo.
+
+El correo electrónico se utiliza para el acceso a la cuenta y
+las comunicaciones relacionadas con ésta.
+
+Cuando una nueva cuenta es habilitada, el usuario recibe un
+correo que le permite establecer su contraseña.
+
+Las contraseñas son gestionadas mediante el sistema de
+autenticación y no son almacenadas por Senttinela como
+información de la organización.
